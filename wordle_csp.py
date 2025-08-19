@@ -68,7 +68,7 @@ def best_next_guess(remaining: List[str], tried: Set[str]) -> str:
 def register(tree: app_commands.CommandTree) -> None:
     @tree.command(
         name="wordle_csp",
-        description="Solve today's Wordle using a fast constraint solver (no LLM)."
+        description="Solve today's Wordle using a fast constraint satisfaction problem solver."
     )
     async def wordle_csp(interaction: discord.Interaction) -> None:
         # -- log start --

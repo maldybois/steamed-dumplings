@@ -45,7 +45,7 @@ def build_system_prompt() -> str:
 def register(tree: app_commands.CommandTree) -> None:
     @tree.command(
         name="wordle_gpt5_mini",
-        description="Solve today's Wordle using GPT-5 Mini (streams emoji feedback)."
+        description="Solve today's Wordle using GPT-5 Mini API."
     )
     async def wordle_gpt5_mini(interaction: discord.Interaction) -> None:
         # --- log start ---
